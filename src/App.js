@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { Fragment } from 'react';
+import Myabout1 from './mycomponent/About';
+import { Myabout20, Mycontact}  from './mycomponent/About';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+    <h1>welcome to react sdsdfsdfsdf dfgsgf kjhsdfjhs d</h1>
+      <h1>skdfhjkshdf</h1>
+      <Myabout1></Myabout1>
+      <Myabout20></Myabout20>
+      <Mycontact/>
+      </Fragment>
   );
+
 }
 
 export default App;
