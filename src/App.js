@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+
 import { Fragment } from 'react';
 import Myabout1 from './mycomponent/About';
 import { Myabout20, Mycontact}  from './mycomponent/About';
+import Mybs from './mycomponent/Mybootstrap';
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <Myabout1></Myabout1>
       <Myabout20></Myabout20>
       <Mycontact/>
+      <Mybs></Mybs>
       </Fragment>
   );
 

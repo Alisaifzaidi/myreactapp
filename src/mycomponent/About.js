@@ -1,4 +1,5 @@
 import React from "react";
+import "../style.css";
 
 function Myabout()
 {
@@ -8,7 +9,7 @@ function Myabout()
 
 export function Myabout20()
 {
-    return <h2>this is heading two</h2>
+    return <h2 className="first">this is heading two</h2>
 }
 
 
