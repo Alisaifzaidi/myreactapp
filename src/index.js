@@ -1,16 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Mynav from './pages/Nav';
-import Myrectbootstrap from './pages/Reactbootstrap';
-import Metrial from './pages/Metrial';
+
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contactus from './pages/Contactus';
+import Form from './pages/Form';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  
+    <BrowserRouter>
     <Mynav/>
-    <Myrectbootstrap/>
-    <Metrial></Metrial>
+      <Routes>
+          <Route path='home' element={<Home/>}></Route>
+          <Route path='about' element={<About/>}></Route>
+          <Route path='contact' element={<Contactus/>}></Route>
+          <Route path='myform' element={<Form/>}></Route>
+      </Routes>
+    
+    
+    </BrowserRouter>
  
   </React.StrictMode>
 );

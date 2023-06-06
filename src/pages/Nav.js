@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
+import { Link, NavLink } from "react-router-dom";
 
 function Mynav()
 {
@@ -17,10 +18,16 @@ function Mynav()
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="http://google.com">Home</a>
+          <Link className="nav-link active" to="/home">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="http://google.com">Link</a>
+          <Link className="nav-link" to="/about">About</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/contact">Contact us</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/myform">Fomrs</Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="http://google.com" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,6 +51,7 @@ function Mynav()
     </div>
   </div>
 </nav> 
+
 
         </Fragment>
     )
