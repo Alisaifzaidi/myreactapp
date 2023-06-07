@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contactus from './pages/Contactus';
 import Form from './pages/Form';
+import Landingpage from './pages/Landingpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ root.render(
     <BrowserRouter>
     <Mynav/>
       <Routes>
+      <Route path='' element={<Landingpage/>}></Route>
           <Route path='home' element={<Home/>}></Route>
           <Route path='about' element={<About/>}></Route>
           <Route path='contact' element={<Contactus/>}></Route>
