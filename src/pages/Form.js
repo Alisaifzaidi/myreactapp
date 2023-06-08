@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function Form() {
 const [first,second]=useState(1000)
 const [one,b]=useState(0)
+
 const abc = (p)=>{
   b(p.target.value);
   
