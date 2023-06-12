@@ -2,14 +2,14 @@ import React, { Fragment } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Mynav()
 {
     return(
         <Fragment>
             
-           <nav className="navbar navbar-expand-lg bg-light">
+           <nav className="navbar navbar-expand-lg bg-light fixed-top shadow">
   <div className="container-fluid">
     <a className="navbar-brand" href="http://google.com">Navbar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
