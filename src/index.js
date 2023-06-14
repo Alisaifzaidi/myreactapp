@@ -8,6 +8,7 @@ import About from './pages/About';
 import Contactus from './pages/Contactus';
 import Form from './pages/Form';
 import Landingpage from './pages/Landingpage';
+import Myaxiosapi from './pages/Myaxiosapi';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
           <Route path='about' element={<About/>}></Route>
           <Route path='contact' element={<Contactus/>}></Route>
           <Route path='myform' element={<Form/>}></Route>
+          <Route path='myaxiosapi' element={<Myaxiosapi/>}></Route>
       </Routes>
     
     
