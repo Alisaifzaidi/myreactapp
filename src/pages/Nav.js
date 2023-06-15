@@ -32,6 +32,9 @@ function Mynav()
         <li className="nav-item">
           <Link className="nav-link" to="/myaxiosapi">axios</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/myfetch">Fetchapi</Link>
+        </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="http://google.com" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown

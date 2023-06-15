@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
 function Myaxiosapi() {
-const [mydata,mydatafunc]=useState({})
+const [mydata,mydatafunc]=useState([])
 
 
 const abc = ()=>{
