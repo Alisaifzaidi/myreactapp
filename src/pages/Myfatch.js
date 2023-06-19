@@ -14,8 +14,6 @@ const [mydata,myfunc]=useState([])
             console.log(abc);
             myfunc(abc);
         })
-        
-       
     }
 
     useEffect(()=>{
