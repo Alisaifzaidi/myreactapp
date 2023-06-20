@@ -38,6 +38,9 @@ function Mynav()
         <li className="nav-item">
           <Link className="nav-link" to="/lazyloading">lazyloading</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/mychart">chart</Link>
+        </li>
 
         
         <li className="nav-item dropdown">

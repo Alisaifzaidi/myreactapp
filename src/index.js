@@ -11,6 +11,7 @@ import Landingpage from './pages/Landingpage';
 import Myaxiosapi from './pages/Myaxiosapi';
 import Myfatch from './pages/Myfatch';
 import Myloader from './myloading/Myloader';
+import Mychart from './pages/Mychart';
 
 
 const Mylazy1 = lazy(()=> import('./myloading/Morepage'));
@@ -36,8 +37,8 @@ root.render(
             <Suspense fallback={<Myloader/>}>
               <Mylazy1/>
             </Suspense>
-
           }/>
+           <Route path='mychart' element={<Mychart/>}></Route>
          
       </Routes>
     </BrowserRouter>
