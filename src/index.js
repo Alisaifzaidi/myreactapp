@@ -12,6 +12,8 @@ import Myaxiosapi from './pages/Myaxiosapi';
 import Myfatch from './pages/Myfatch';
 import Myloader from './myloading/Myloader';
 import Mychart from './pages/Mychart';
+import { Auth0Provider } from '@auth0/auth0-react';
+import Mylogin from './pages/Mylogin';
 
 
 const Mylazy1 = lazy(()=> import('./myloading/Morepage'));
@@ -23,10 +25,16 @@ root.render(
   <React.StrictMode>
   
     <BrowserRouter>
+    <Auth0Provider 
+    domain="dev-2lztdozl12hbrfpe.us.auth0.com"
+    clientId="WTv2A4DOYunRulqeSTWTtMoVErYTbmjI"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
     <Mynav/>
       <Routes>
-      
-      <Route path='' element={<Landingpage/>}></Route>
+        <Route path='' element={<Mylogin/>}/>
+      {/* <Route path='' element={<Landingpage/>}></Route> */}
           <Route path='home' element={<Home/>}></Route>
           <Route path='about' element={<About/>}></Route>
           <Route path='contact' element={<Contactus/>}></Route>
@@ -41,6 +49,7 @@ root.render(
            <Route path='mychart' element={<Mychart/>}></Route>
          
       </Routes>
+      </Auth0Provider>
     </BrowserRouter>
  
   </React.StrictMode>
