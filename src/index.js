@@ -14,6 +14,8 @@ import Myloader from './myloading/Myloader';
 import Mychart from './pages/Mychart';
 import { Auth0Provider } from '@auth0/auth0-react';
 import Mylogin from './pages/Mylogin';
+import { Provider } from 'react-redux';
+import { store } from './redux/Storage';
 
 
 const Mylazy1 = lazy(()=> import('./myloading/Morepage'));
@@ -23,7 +25,7 @@ const Mylazy1 = lazy(()=> import('./myloading/Morepage'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  
+  <Provider store={store}>
     <BrowserRouter>
     <Auth0Provider 
     domain="dev-2lztdozl12hbrfpe.us.auth0.com"
@@ -51,7 +53,7 @@ root.render(
       </Routes>
       </Auth0Provider>
     </BrowserRouter>
- 
+    </Provider>
   </React.StrictMode>
 );
 
