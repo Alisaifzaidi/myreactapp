@@ -10,7 +10,6 @@ const abc = ()=>{
         mydatafunc(e.data.products)
         // console.log(e.data);
         console.log(mydata);
-
 })
 
 };

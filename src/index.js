@@ -16,6 +16,8 @@ import { Auth0Provider } from '@auth0/auth0-react';
 import Mylogin from './pages/Mylogin';
 import { Provider } from 'react-redux';
 import { store } from './redux/Storage';
+import Detailsdata from './pages/Detailsdata';
+
 
 
 const Mylazy1 = lazy(()=> import('./myloading/Morepage'));
@@ -43,6 +45,7 @@ root.render(
           <Route path='myform' element={<Form/>}></Route>
           <Route path='myaxiosapi' element={<Myaxiosapi/>}></Route>
           <Route path='myfetch' element={<Myfatch/>}></Route>
+          <Route path='myfetch/:id' element={<Detailsdata/>}></Route>
           <Route path='lazyloading' element={
             <Suspense fallback={<Myloader/>}>
               <Mylazy1/>

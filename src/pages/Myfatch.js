@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Myfatch() {
 
@@ -38,7 +39,7 @@ const [mydata,myfunc]=useState([])
                         <div className="card-body">
                             <h5 className="card-title">{e.title}</h5>
                             <p className="card-text">{e.body}</p>
-                            <a href="#" className="btn btn-primary">{e.id}</a>
+                            <Link to={`/myfetch/${e.id}`} className="btn btn-primary">view degails {e.id}</Link>
                         </div>
                         </div>
                         </div>
