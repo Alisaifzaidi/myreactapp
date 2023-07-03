@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.css";
+import axios from 'axios';
 import {
   BarChart,
   Bar,
@@ -56,7 +57,19 @@ const data = [
 
 
 
+
+
+
 function Mychart() {
+  const myapi="https://jsonplaceholder.typicode.com/todos"
+const [a,b]=useState([])
+useEffect(()=>{
+    axios.get(myapi).then((e)=>{
+      b(e.data);
+      
+    })
+    console.log(a);
+},[])
 
   return (
     <div className='mychart'>
@@ -80,6 +93,10 @@ function Mychart() {
       <Bar dataKey="uv" fill="#82ca9d" />
       <Bar dataKey="amt" fill="green" />
     </BarChart>
+
+      
+
+
     </div>
   )
 }
