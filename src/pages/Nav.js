@@ -41,6 +41,10 @@ function Mynav()
         <li className="nav-item">
           <Link className="nav-link" to="/mychart">chart</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/service">service</Link>
+        </li>
+
 
         
         <li className="nav-item dropdown">

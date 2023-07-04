@@ -17,6 +17,10 @@ import Mylogin from './pages/Mylogin';
 import { Provider } from 'react-redux';
 import { store } from './redux/Storage';
 import Detailsdata from './pages/Detailsdata';
+import Myservicepage from './pages/Myservicepage';
+import Mymobile from './pages/services/Mymobile';
+import Myletpop from './pages/services/Myletpop';
+import Mytv from './pages/services/Mytv';
 
 
 
@@ -52,6 +56,11 @@ root.render(
             </Suspense>
           }/>
            <Route path='mychart' element={<Mychart/>}></Route>
+           <Route path='service' element={<Myservicepage/>}>
+              <Route path='mobilelist' element={<Mymobile/>}/>
+              <Route path='tvlist' element={<Mytv/>}/>
+              <Route path='leptoplist' element={<Myletpop/>}/>
+           </Route>
          
       </Routes>
       </Auth0Provider>
